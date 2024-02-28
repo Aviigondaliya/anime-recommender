@@ -20,3 +20,7 @@ Anime Recommender is a personalized anime recommendation system built using Flas
 
 - **Customization:** The recommendation algorithm and parameters can be adjusted in the `get_recommendations` function to suit specific requirements.
 
+## preview
+![Screenshot (36)](https://github.com/Aviigondaliya/anime-recommender/assets/157000780/67442927-092e-403c-9a5c-ac6e297c5b9c)
+![Screenshot (37)](https://github.com/Aviigondaliya/anime-recommender/assets/157000780/65fb703a-f0f3-4f5e-85bb-0c71ddf99866)
+![Screenshot (38)](https://github.com/Aviigondaliya/anime-recommender/assets/157000780/8bf8f423-9677-4557-bec8-9e73390c2b3d)
