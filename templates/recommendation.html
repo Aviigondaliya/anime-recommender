@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Anime Recommendations</title>
+
+     <style>
+		h1{
+			color: #061036;
+            font-family:"Segoe UI Variable";
+			text-align: center;
+            text-shadow:white;
+            padding: 30px;
+
+		}
+        body {
+            background-image: url('/static/anime.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            }
+        .container{
+            margin: auto;
+            background-color: rgba(203, 216, 232, 0.62);
+            background-blend-mode: color-burn ;
+            padding: 40px;
+            color: black;
+        }
+</style>
+
 </head>
+
 <body>
-    <h1>Recommended Anime</h1>
+     <h1>Recommended Anime</h1>
+    <div class="container">
     <ul>
-        {% for anime in recommendation %}
-            <li>{{ anime }}</li>
-        {% endfor %}
+        {% if recommendation %}
+            {% for anime in recommendation %}
+                <li>
+                    <h3>{{ anime['title'] }}</h3>
+                    <p><strong>Genre:</strong> {{ anime['genre'] }}</p>
+                    <p><strong>Title In English:</strong> {{ anime['title_english'] }}</p>
+
+                </li>
+            {% endfor %}
+        {% else %}
+            <p>No recommendations available.</p>
+        {% endif %}
     </ul>
+    </div>
 </body>
 </html>
